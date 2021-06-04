@@ -13,7 +13,7 @@ Django==3.1
 django-bootstrap-pagination==1.7.1
 django-classy-tags==2.0.0
 django-cms==3.8.0
-django-debug-toolbar==2.2
+django-debug-toolbar==2.2.1
 django-filer==2.0.2
 django-formtools==2.2
 django-js-asset==1.2.2
