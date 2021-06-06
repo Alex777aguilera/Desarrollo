@@ -131,7 +131,7 @@ LOGIN_URL = '/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'global_static'),
 )
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # EMAIL_USE_TLS = True
 # EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'aguileraa18@gmail.com'
