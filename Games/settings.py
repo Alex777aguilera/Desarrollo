@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&r@o0g&j6^*o2n+$=g(a%!!o5-4#q#0kc^f4naxzftysl3q5xy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['games-web.herokuapp.com']
 
 
 # Application definition
@@ -75,9 +77,9 @@ WSGI_APPLICATION = 'Games.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    "default": {
+        "ENGINE" : "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3")
     }
 }
 
@@ -129,8 +131,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'global_static'),
 )
 
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'aguileraa18@gmail.com'
-EMAIL_HOST_PASSWORD = 'Alejandro189'
-EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'aguileraa18@gmail.com'
+# EMAIL_HOST_PASSWORD = 'Alejandro189'
+# EMAIL_PORT = 587
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
