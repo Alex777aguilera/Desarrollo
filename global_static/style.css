@@ -1413,7 +1413,6 @@ hr.invis1 {
     position: relative;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background: url("uploads/design.jpg") no-repeat;
 }
 
 .filter-button-group{
