@@ -1,0 +1,7 @@
+.vscode 
+db.py
+__pycache__
+Iuth_app/__pycache__/*
+Inventario_UTH/__pycache__/*
+Iuth_app/migrations/__pycache__/*
+*.DS_Store
