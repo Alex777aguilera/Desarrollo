@@ -368,36 +368,7 @@
 *	COLORS & SKINS
 *
 **************************/
-.pattern_1 .camera_overlayer {
-	background: url(../images/patterns/overlay1.png) repeat;
-}
-.pattern_2 .camera_overlayer {
-	background: url(../images/patterns/overlay2.png) repeat;
-}
-.pattern_3 .camera_overlayer {
-	background: url(../images/patterns/overlay3.png) repeat;
-}
-.pattern_4 .camera_overlayer {
-	background: url(../images/patterns/overlay4.png) repeat;
-}
-.pattern_5 .camera_overlayer {
-	background: url(../images/patterns/overlay5.png) repeat;
-}
-.pattern_6 .camera_overlayer {
-	background: url(../images/patterns/overlay6.png) repeat;
-}
-.pattern_7 .camera_overlayer {
-	background: url(../images/patterns/overlay7.png) repeat;
-}
-.pattern_8 .camera_overlayer {
-	background: url(../images/patterns/overlay8.png) repeat;
-}
-.pattern_9 .camera_overlayer {
-	background: url(../images/patterns/overlay9.png) repeat;
-}
-.pattern_10 .camera_overlayer {
-	background: url(../images/patterns/overlay10.png) repeat;
-}
+
 .camera_caption {
 	color: #fff;
 }
