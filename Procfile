@@ -1,1 +1,1 @@
-web: gunicorn Ecommerce.wsgi --log-file -
+web: gunicorn bdeploy.wsgi --log-file -
