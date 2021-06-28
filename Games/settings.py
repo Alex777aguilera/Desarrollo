@@ -26,7 +26,7 @@ SECRET_KEY = '&r@o0g&j6^*o2n+$=g(a%!!o5-4#q#0kc^f4naxzftysl3q5xy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pdeploy.herokuapp.com']
+ALLOWED_HOSTS = ['pdeploy.herokuapp.com/pdeploy']
 
 
 # Application definition
