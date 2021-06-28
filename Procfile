@@ -1,1 +1,1 @@
-web: gunicorn bdeploy.wsgi --log-file -
+web: gunicorn GAMES.wsgi
